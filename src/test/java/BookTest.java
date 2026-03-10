@@ -1,10 +1,9 @@
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-
 import java.time.LocalDate;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
@@ -103,8 +102,9 @@ class BookTest {
 
     @Test
     void setISBN() {
-        book4.setISBN(ISBN_);                   //set value to new parameter, setter test
-        assertNotEquals(ISBN, book4.getISBN()); //setter test
+        book4.setISBN();                   //set value to new parameter, setter test
+        //setter test
+        assertNotEquals(ISBN, book4.getISBN());
         assertEquals(ISBN_, book4.getISBN());   //setter test
     }
 
