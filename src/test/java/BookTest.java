@@ -100,6 +100,9 @@ class BookTest {
         assertEquals(book2.getISBN(), book3.getISBN());     //equality test
     }
 
+
+
+
     @Test
     void setISBN() {
         book4.setISBN();                   //set value to new parameter, setter test
@@ -107,6 +110,7 @@ class BookTest {
         assertNotEquals(ISBN, book4.getISBN());
         assertEquals(ISBN_, book4.getISBN());   //setter test
     }
+
 
     @Test
     void getTitle() {
