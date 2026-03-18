@@ -103,13 +103,13 @@ class BookTest {
 
 
 
-//    @Test
-//    void setISBN() {
-//        book4.setISBN();                   //set value to new parameter, setter test
-//        //setter test
-//        assertNotEquals(ISBN, book4.getISBN());
-//        assertEquals(ISBN_, book4.getISBN());   //setter test
-//    }
+    @Test
+    void setISBN() {
+        book4.setISBN();                   //set value to new parameter, setter test
+        //setter test
+        assertNotEquals(ISBN, book4.getISBN());
+        assertEquals(ISBN_, book4.getISBN());   //setter test
+    }
 
 
     @Test
