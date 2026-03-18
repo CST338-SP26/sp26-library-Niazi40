@@ -60,7 +60,7 @@ public class Book {
         this.dueDate = dueDate;
     }
     //setISBN
-    public void setISBN() {
+    public void setISBN(String newISBN) {
 
         this.isbn = isbn;
     }

@@ -105,10 +105,13 @@ class BookTest {
 
     @Test
     void setISBN() {
-        book4.setISBN();                   //set value to new parameter, setter test
-        //setter test
-        assertNotEquals(ISBN, book4.getISBN());
-        assertEquals(ISBN_, book4.getISBN());   //setter test
+        String oldISBN = book4.getISBN();
+        String newISBN = "1234567890";
+
+        book4.setISBN(newISBN);
+
+        assertNotEquals(oldISBN, book4.getISBN());
+        assertEquals(newISBN, book4.getISBN());
     }
 
 
