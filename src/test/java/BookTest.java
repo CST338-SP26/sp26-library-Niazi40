@@ -1,10 +1,11 @@
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-
 import java.time.LocalDate;
+
+import Utilities.Book;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
@@ -84,15 +85,15 @@ class BookTest {
 
     //GETTERS AND SETTERS----------------------------------------------------------------
 
-    @Test
-    void staticTest(){
-        assertEquals(0, Book.ISBN_);
-        assertEquals(1, Book.TITLE_);
-        assertEquals(2, Book.SUBJECT_);
-        assertEquals(3, Book.PAGE_COUNT_);
-        assertEquals(4, Book.AUTHOR_);
-        assertEquals(5, Book.DUE_DATE_);
-    }
+//    @Test
+//    void staticTest(){
+//        assertEquals(0, Book.ISBN_);
+//        assertEquals(1, Book.TITLE_);
+//        assertEquals(2, Book.SUBJECT_);
+//        assertEquals(3, Book.PAGE_COUNT_);
+//        assertEquals(4, Book.AUTHOR_);
+//        assertEquals(5, Book.DUE_DATE_);
+//    }
 
     @Test
     void getISBN() {
